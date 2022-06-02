@@ -12,10 +12,14 @@
     </head>
 
     <body>
+      <div class="wrap">
         <header>
-            <h1>Online Store</h1>
+            <h1><a href="index.html">Online Store</a></h1>
             <div id="cart">
-                <i class="fas fa-shopping-cart"></i><p>Cart</p>
+                <img src="../images/bag.png" alt="cart bag"/>Cart
+                <div class="cart-count">
+                  2
+                </div>
             </div>
         </header>
 
@@ -26,34 +30,72 @@
 
             <div class="items">
                 <div class="items-box box1">
-                    <img src="images/1.jpg" alt="Whiskey">
-                    <p>William Lawson's Blend Whiskey</p>
-                    <h4>₦ 3,790</h4>
-                    <button class="box1">Add to Cart</button>
+                    <img src="images/1.jpg" alt="Whiskey" class="shop-item-image">
+                    <p class="shop-item-title">William Lawson's Blend Whiskey</p>
+                    <h4 class="shop-item-price">₦ 3790</h4>
+                    <button class="shop-item-button">Add to Cart</button>
                 </div>
                 <div class="items-box box2">
-                    <img src="images/2.jpg" alt="Sunlight">
-                    <p>Sunlight Home Care Sallah Box</p>
-                    <h4>₦ 2,493</h4>
-                    <button class="box2">Add to Cart</button>
+                    <img src="images/2.jpg" alt="Sunlight" class="shop-item-image">
+                    <p class="shop-item-title">Sunlight Home Care Sallah Box</p>
+                    <h4 class="shop-item-price">₦ 2493</h4>
+                    <button class="shop-item-button">Add to Cart</button>
                 </div>
                 <div class="items-box box3">
-                    <img src="images/3.jpg" alt="Parboiled Rice">
-                    <p>Mama'S Pride Parboiled Rice 25kg</p>
-                    <h4>₦ 15,430</h4>
-                    <button class="box3">Add to Cart</button>
+                    <img src="images/3.jpg" alt="Parboiled Rice" class="shop-item-image">
+                    <p class="shop-item-title">Mama'S Pride Parboiled Rice 25kg</p>
+                    <h4 class="shop-item-price"> ₦ 15430</h4>
+                    <button class="shop-item-button">Add to Cart</button>
                 </div>
                 <div class="items-box box4">
-                    <img src="images/4.jpg" alt="Oraimo powerbank">
-                    <p>Oraimo OPB-P116DN 10000MAH</p>
-                    <h4>₦ 4,855</h4>
-                    <button class="box4">Add to Cart</button>
+                    <img src="images/4.jpg" alt="Oraimo powerbank" class="shop-item-image">
+                    <p class="shop-item-title">Oraimo OPB-P116DN 10000MAH</p>
+                    <h4 class="shop-item-price">₦ 4855</h4>
+                    <button class="shop-item-button">Add to Cart</button>
                 </div>
             </div>
+
+
+            <section class="container content-section">
+              <h2 class="section-header">CART</h2>
+              <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">ITEM</span>
+                  <span class="cart-price cart-header cart-column">PRICE</span>
+                  <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+              </div>
+              <div class="cart-items">
+                  <div class="cart-row">
+                      <div class="cart-item cart-column">
+                          <img class="cart-item-image" src="../images/1.jpg" width="100" height="100">
+                          <span class="cart-item-title">William Lawson's Blend Whiskey</span>
+                      </div>
+                      <span class="cart-price cart-column">₦3790</span>
+                      <div class="cart-quantity cart-column">
+                          <input class="cart-quantity-input" type="number" value="1">
+                          <button class="btn btn-danger" type="button">REMOVE</button>
+                      </div>
+                  </div>
+                  <div class="cart-row">
+                      <div class="cart-item cart-column">
+                          <img class="cart-item-image" src="../images/2.jpg" width="100" height="100">
+                          <span class="cart-item-title">Sunlight Home Care Sallah Box</span>
+                      </div>
+                      <span class="cart-price cart-column">₦2493</span>
+                      <div class="cart-quantity cart-column">
+                          <input class="cart-quantity-input" type="number" value="2">
+                          <button class="btn btn-danger" type="button">REMOVE</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+                  <span class="cart-total-price">₦8776</span>
+              </div>
+              <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+          </section>
         </main>
-        
+      </div>  
 
-
-        
+      <script src="./app.js"></script>
     </body>
 </html>
